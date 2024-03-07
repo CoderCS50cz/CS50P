@@ -1,0 +1,11 @@
+from validator_collection import validators, checkers, errors
+
+import validators
+
+
+email = input("What's your email address? ").strip()
+
+if validators.email(email):
+    print("Valid")
+else:
+    print("Invalid")
